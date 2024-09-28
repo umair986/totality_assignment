@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Property } from "../../app/page";
 import { DatePickerDemo } from "./Date";
+import Image from "next/image";
 
 type PropertyCardProps = {
   property: Property;
@@ -16,7 +17,7 @@ export default function PropertyCard({
 
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden">
-      <img
+      <Image
         src={property.image}
         alt={property.title}
         className="w-full h-48 object-cover"
