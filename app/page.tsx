@@ -24,7 +24,7 @@ export type BookedProperty = Property & {
 
 export default function Home() {
   const router = useRouter();
-  const [properties, setProperties] = useState<Property[]>([
+  const [properties] = useState<Property[]>([
     {
       id: 1,
       title: "Cozy Beachfront Cottage",
